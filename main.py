@@ -51,7 +51,7 @@ DRY_RUN = False
 # Минимальное число баров в истории, чтобы тикер считался валидным
 MIN_BARS_HISTORY = 200
 
-# Комиссия брокера на одну сторону сделки, доля от объёма 
+# Комиссия брокера на одну сторону сделки, доля от объёма
 COMMISSION_PER_SIDE_PCT = 0.00004
 
 # Дневной лимит убытка (по сумме net-PnL с начала запуска), доля (−0.02 = −2%)
@@ -87,6 +87,9 @@ class InstrumentState:
     take_profit_pct: float = TAKE_PROFIT_PCT
     stop_loss_pct: float = STOP_LOSS_PCT
     enabled: bool = True  # можно отключить тикер через конфиг
+
+    # НОВОЕ: максимальный допустимый спред в долях (0.005 = 0.5%)
+    max_spread_pct: float = 0.005
 
 
 @dataclass
@@ -125,8 +128,36 @@ def moneyvalue_to_decimal(mv) -> Decimal:
     """
     if mv is None:
         return Decimal("0")
-    # mv.units – целая часть, mv.nano – наносы (1e-9)
     return Decimal(mv.units) + (Decimal(mv.nano) / Decimal(1_000_000_000))
+
+
+def get_current_spread_pct(client: Client, figi: str) -> Optional[float]:
+    """
+    Получаем текущий спред из стакана (depth=1) и возвращаем в долях:
+    (ask - bid) / mid. Если нет данных — возвращаем None.
+    """
+    try:
+        ob = client.market_data.get_order_book(figi=figi, depth=1)
+    except Exception as e:
+        logging.error("Не удалось получить стакан для figi=%s: %s", figi, e)
+        return None
+
+    if not ob.bids or not ob.asks:
+        return None
+
+    best_bid = moneyvalue_to_decimal(ob.bids[0].price)
+    best_ask = moneyvalue_to_decimal(ob.asks[0].price)
+
+    if best_bid <= 0 or best_ask <= 0:
+        return None
+
+    mid = (best_bid + best_ask) / 2
+    spread = best_ask - best_bid
+    if mid == 0:
+        return None
+
+    spread_pct = float(spread / mid)
+    return spread_pct
 
 
 # ================== ЗАГРУЗКА ИСТОРИИ ==================
@@ -237,9 +268,11 @@ def load_or_init_config(path: str) -> dict:
         return {"tickers": {}}
 
 
-def ensure_config_has_all_tickers(config: dict,
-                                  states: Dict[str, InstrumentState],
-                                  path: str) -> dict:
+def ensure_config_has_all_tickers(
+    config: dict,
+    states: Dict[str, InstrumentState],
+    path: str
+) -> dict:
     """
     Гарантируем, что в конфиге есть запись для каждого тикера из states.
     Если чего-то нет — добавляем с дефолтами и сразу сохраняем.
@@ -255,6 +288,8 @@ def ensure_config_has_all_tickers(config: dict,
                 "ret_z_entry": st.ret_z_entry,
                 "take_profit_pct": TAKE_PROFIT_PCT,
                 "stop_loss_pct": STOP_LOSS_PCT,
+                # НОВОЕ: дефолтный лимит по спреду (0.5%)
+                "max_spread_pct": 0.005,
             }
             changed = True
 
@@ -315,6 +350,12 @@ def apply_config_to_states(states: Dict[str, InstrumentState], config: dict):
             except (TypeError, ValueError):
                 pass
 
+        if "max_spread_pct" in cfg:
+            try:
+                st.max_spread_pct = float(cfg["max_spread_pct"])
+            except (TypeError, ValueError):
+                pass
+
 
 # ================== ИНСТРУМЕНТЫ ТИНЬКОФФ ==================
 
@@ -337,7 +378,7 @@ def get_moex_shares_meta(client: Client):
             inst.currency.lower() == "rub"
             and inst.api_trade_available_flag
             and inst.buy_available_flag
-            # and inst.country_of_risk == "RU"  # если захочешь зажать
+            # and inst.country_of_risk == "RU"
         ):
             ticker = inst.ticker
             ticker_to_figi[ticker] = inst.figi
@@ -495,7 +536,7 @@ def open_long(
         )
         logging.info("BUY отправлен: %s x%d, resp=%s", ticker, lots, resp)
         state.in_position = True
-        state.entry_price = last_price
+        state.entry_price = last_price  # при желании можно взять resp.executed_order_price
         log_trade(
             ticker=ticker,
             side="BUY",
@@ -651,12 +692,8 @@ def sync_positions_from_broker(
     figi_to_ticker: Dict[str, str],
 ):
     """
-    Сценарий №1: при старте смотрим текущие позиции у брокера
-    и помечаем соответствующие тикеры как in_position=True.
-
-    ВАЖНО: здесь мы не требуем average_position_price.
-    Если её нет — просто помечаем позицию как открытую,
-    а entry_price инициализируем по первой свече в process_candle.
+    При старте смотрим текущие позиции у брокера и помечаем соответствующие тикеры in_position=True.
+    entry_price инициализируем по первой свече.
     """
     try:
         resp = client.operations.get_positions(account_id=account_id)
@@ -675,18 +712,15 @@ def sync_positions_from_broker(
 
         ticker = figi_to_ticker.get(figi)
         if not ticker:
-            # Эта фигишка не среди тех, на кого подписались (облига, ETF и т.п.)
             continue
 
         state = state_by_ticker.get(ticker)
         if not state:
             continue
 
-        # Кол-во бумаг (на всякий случай логируем, но не используем)
         qty = getattr(sec, "balance", getattr(sec, "quantity", None))
 
         state.in_position = True
-        # entry_price здесь можем оставить 0, инициализируем по первой свече
         logging.info(
             "Синхронизирована позиция по %s (figi=%s, qty=%s) – помечаем in_position=True",
             ticker,
@@ -696,7 +730,6 @@ def sync_positions_from_broker(
         synced += 1
 
     logging.info("Синхронизировано позиций с брокером: %d тикеров", synced)
-
 
 
 def rebuild_risk_state_from_positions(
@@ -767,8 +800,30 @@ def process_candle(
     if not state.in_position:
         if not can_open_new_position(ticker, sector, risk_state):
             return
-        if should_open_long(state, volume, ret):
-            open_long(client, account_id, figi, ticker, state, candle.time, risk_state, sector)
+        # Сначала проверяем аномалию по объёму/ретёрну
+        if not should_open_long(state, volume, ret):
+            return
+
+        # Теперь проверяем спред через стакан
+        spread_pct = get_current_spread_pct(client, figi)
+        if spread_pct is None:
+            logging.info(
+                "[%s] Не удалось получить спред (нет стакана или ошибка), пропускаем сигнал.",
+                ticker,
+            )
+            return
+
+        if spread_pct > state.max_spread_pct:
+            logging.info(
+                "[%s] Спред %.4f%% выше лимита %.4f%%, пропускаем сигнал.",
+                ticker,
+                spread_pct * 100,
+                state.max_spread_pct * 100,
+            )
+            return
+
+        # Всё ок: и сигнал, и спред
+        open_long(client, account_id, figi, ticker, state, candle.time, risk_state, sector)
     else:
         if should_close_long(state):
             close_long(client, account_id, figi, ticker, state, candle.time, risk_state, sector)
