@@ -31,7 +31,7 @@ HISTORY_DIR = "history_5m"
 # Файл конфигурации с пер-тикерными настройками
 CONFIG_FILE = "config.json"
 
-# Ограничим число инструментов (я положил хуй на это в моменте драйтестов)
+# Ограничим число инструментов
 MAX_INSTRUMENTS = 170
 
 # БАЗОВЫЕ параметры аномалий (z-score), от них пляшем по умолчанию
@@ -46,13 +46,13 @@ STOP_LOSS_PCT   = -0.005  # -0.5% убыток
 LOTS_PER_TRADE = 1
 
 # Безопасность: True = НЕ шлём ордера, только логируем
-DRY_RUN = True
+DRY_RUN = False
 
 # Минимальное число баров в истории, чтобы тикер считался валидным
 MIN_BARS_HISTORY = 200
 
-# Комиссия брокера на одну сторону сделки, доля от объёма (0.0003 = 0.03%)
-COMMISSION_PER_SIDE_PCT = 0.0003
+# Комиссия брокера на одну сторону сделки, доля от объёма 
+COMMISSION_PER_SIDE_PCT = 0.00004
 
 # Дневной лимит убытка (по сумме net-PnL с начала запуска), доля (−0.02 = −2%)
 DAILY_LOSS_LIMIT_PCT = -0.5
@@ -116,6 +116,17 @@ def calc_z_score(x: float, mean: float, std: float) -> float:
     if std == 0.0:
         return 0.0
     return (x - mean) / std
+
+
+def moneyvalue_to_decimal(mv) -> Decimal:
+    """
+    Локальный аналог moneyvalue_to_decimal для старых версий tinkoff.invest.
+    MoneyValue -> Decimal.
+    """
+    if mv is None:
+        return Decimal("0")
+    # mv.units – целая часть, mv.nano – наносы (1e-9)
+    return Decimal(mv.units) + (Decimal(mv.nano) / Decimal(1_000_000_000))
 
 
 # ================== ЗАГРУЗКА ИСТОРИИ ==================
@@ -631,6 +642,88 @@ def should_close_long(state: InstrumentState) -> bool:
     return (ret >= tp) or (ret <= sl)
 
 
+# ================== СИНК ПОЗИЦИЙ С БРОКЕРОМ ==================
+
+def sync_positions_from_broker(
+    client: Client,
+    account_id: str,
+    state_by_ticker: Dict[str, InstrumentState],
+    figi_to_ticker: Dict[str, str],
+):
+    """
+    Сценарий №1: при старте смотрим текущие позиции у брокера
+    и помечаем соответствующие тикеры как in_position=True.
+
+    ВАЖНО: здесь мы не требуем average_position_price.
+    Если её нет — просто помечаем позицию как открытую,
+    а entry_price инициализируем по первой свече в process_candle.
+    """
+    try:
+        resp = client.operations.get_positions(account_id=account_id)
+    except Exception as e:
+        logging.error("Не удалось получить позиции для синка: %s", e)
+        return
+
+    logging.info("get_positions: всего позиций в securities=%d", len(resp.securities))
+
+    synced = 0
+
+    for sec in resp.securities:
+        figi = getattr(sec, "figi", None)
+        if not figi:
+            continue
+
+        ticker = figi_to_ticker.get(figi)
+        if not ticker:
+            # Эта фигишка не среди тех, на кого подписались (облига, ETF и т.п.)
+            continue
+
+        state = state_by_ticker.get(ticker)
+        if not state:
+            continue
+
+        # Кол-во бумаг (на всякий случай логируем, но не используем)
+        qty = getattr(sec, "balance", getattr(sec, "quantity", None))
+
+        state.in_position = True
+        # entry_price здесь можем оставить 0, инициализируем по первой свече
+        logging.info(
+            "Синхронизирована позиция по %s (figi=%s, qty=%s) – помечаем in_position=True",
+            ticker,
+            figi,
+            qty,
+        )
+        synced += 1
+
+    logging.info("Синхронизировано позиций с брокером: %d тикеров", synced)
+
+
+
+def rebuild_risk_state_from_positions(
+    risk_state: RiskState,
+    state_by_ticker: Dict[str, InstrumentState],
+    ticker_to_sector: Dict[str, Optional[str]],
+):
+    """
+    После синка позиций восстанавливаем open_positions_total и open_by_sector.
+    """
+    risk_state.open_positions_total = 0
+    risk_state.open_by_sector = {}
+
+    for ticker, st in state_by_ticker.items():
+        if not st.in_position:
+            continue
+        risk_state.open_positions_total += 1
+        sector = ticker_to_sector.get(ticker)
+        if sector:
+            risk_state.open_by_sector[sector] = risk_state.open_by_sector.get(sector, 0) + 1
+
+    logging.info(
+        "После синка: всего открытых позиций=%d",
+        risk_state.open_positions_total,
+    )
+
+
 # ================== ОБРАБОТКА СВЕЧИ ==================
 
 def process_candle(
@@ -652,6 +745,15 @@ def process_candle(
         ret = float((close_price / state.last_price) - 1)
 
     state.last_price = close_price
+
+    # Если поза уже была помечена как открытая, но entry_price ещё не знаем
+    if state.in_position and state.entry_price == 0:
+        state.entry_price = close_price
+        logging.info(
+            "[%s] Инициализируем entry_price после синка: %s",
+            ticker,
+            close_price,
+        )
 
     logging.info(
         "[%s] %s close=%s vol=%s in_pos=%s",
@@ -801,6 +903,19 @@ def main():
             ", ".join(subscribed_tickers),
         )
 
+        # ---- Синхронизируем уже открытые позиции с брокером ----
+        sync_positions_from_broker(
+            client=client,
+            account_id=account_id,
+            state_by_ticker=state_by_ticker,
+            figi_to_ticker=figi_to_ticker,
+        )
+        rebuild_risk_state_from_positions(
+            risk_state=risk_state,
+            state_by_ticker=state_by_ticker,
+            ticker_to_sector=ticker_to_sector,
+        )
+
         market_data_stream: MarketDataStreamManager = client.create_market_data_stream()
         market_data_stream.candles.waiting_close().subscribe(instruments)
 
@@ -836,4 +951,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
