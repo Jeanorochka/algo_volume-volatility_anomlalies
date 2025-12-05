@@ -10,3 +10,8 @@ pip install pandas numpy matplotlib apimoex tinkoff-invest
 History.py - creates a folder filled with 5m candles history starting from x date
 Config.json - config :)
 Main.py - thing u need to start 
+
+!!!DRYTEST should be false if u wanna trade with real money ofc 
+GPT took good care of you so you have insane description for the whole thing 
+
+Have fun
