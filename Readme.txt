@@ -1,17 +1,16 @@
-
 python 3.11.x
-$env:INVEST_TOKEN="(ur token)"
-$env:INVEST_ACCOUNT_ID="acc id"
-
+$env:INVEST_TOKEN="(ваш токен)"
+$env:INVEST_ACCOUNT_ID="ID аккаунта"
 
 python -m pip install --upgrade pip
 pip install pandas numpy matplotlib apimoex tinkoff-invest
 
-History.py - creates a folder filled with 5m candles history starting from x date
-Config.json - config :)
-Main.py - thing u need to start 
+History.py - создает папку, заполненную историей 5-минутных свечей, начиная с даты X
+Config.json - конфиг :)
+Main.py - то, что нужно запускать
 
-!!!DRYTEST should be false if u wanna trade with real money ofc 
-GPT took good care of you so you have insane description for the whole thing 
+По сделкам будут вестись логи, сможете потом посчитать PnL
+!!!DRYTEST должен быть false, если вы хотите торговать реальными деньгами, конечно
+GPT мамуля позаботилась об описании скрипта, которое я ненавижу писать, поэтому глазкам будет приятно 
 
-Have fun
+have fun folks
