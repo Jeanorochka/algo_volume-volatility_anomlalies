@@ -36,7 +36,6 @@ CONFIG_FILE = "config.json"
 MAX_INSTRUMENTS = 170
 
 # БАЗОВЫЕ параметры аномалий (z-score), от них пляшем по умолчанию
-# Чуть снизил vol-порог, чтобы входить немного раньше по объёму
 BASE_VOL_Z_ENTRY = 2.2   # было 2.5
 BASE_RET_Z_ENTRY = 1.4   # было 1.5
 
@@ -79,6 +78,11 @@ class InstrumentState:
     ret_mean: float
     ret_std: float
     last_price: Decimal
+
+    # НОВОЕ: для корректного ретёрна
+    prev_candle_time: Optional[datetime] = None
+    # ref_price_for_ret — close предыдущего бара, относительно него считаем ret
+    ref_price_for_ret: Decimal = Decimal("0")
 
     # Пороговые значения z-score для этого тикера (адаптивные + конфиг)
     vol_z_entry: float = BASE_VOL_Z_ENTRY
@@ -805,12 +809,40 @@ def process_candle(
     high_price  = quotation_to_decimal(candle.high)
     low_price   = quotation_to_decimal(candle.low)
     volume = candle.volume
+    candle_time = candle.time
 
-    if state.last_price == 0:
+    # --- НОВАЯ ЛОГИКА RET: сопоставима с историей ---
+    # История: ret считали как pct_change по минутным close.
+    # Здесь: при смене минуты считаем ret от close прошлого бара.
+    # Внутри минуты считаем накопленный ret относительно close прошлого бара.
+
+    if state.prev_candle_time is None:
+        # Первая свеча по тикеру за сессию: ret не считаем, просто инициализируем
         ret = 0.0
+        # базовый референс для последующих минут
+        state.ref_price_for_ret = close_price
     else:
-        ret = float((close_price / state.last_price) - 1)
+        if candle_time != state.prev_candle_time:
+            # НОВЫЙ БАР (новая минута)
+            # prev_close = последний close прошлого бара
+            prev_close = state.last_price if state.last_price > 0 else state.ref_price_for_ret
+            if prev_close > 0:
+                ret = float((close_price / prev_close) - 1)
+            else:
+                ret = 0.0
+            # Теперь ref_price_for_ret = close прошлого бара
+            state.ref_price_for_ret = prev_close
+        else:
+            # Всё ещё та же минута: считаем, насколько текущий close ушёл
+            # от close предыдущего бара (накапливаемое движение бара)
+            prev_close = state.ref_price_for_ret
+            if prev_close > 0:
+                ret = float((close_price / prev_close) - 1)
+            else:
+                ret = 0.0
 
+    # Обновляем время и last_price под конец
+    state.prev_candle_time = candle_time
     state.last_price = close_price
 
     # Если поза уже была помечена как открытая, но entry_price ещё не знаем (после синка)
@@ -836,6 +868,7 @@ def process_candle(
     if not state.in_position:
         if not can_open_new_position(ticker, sector, risk_state):
             return
+
         # Сначала проверяем аномалию по объёму/ретёрну
         if not should_open_long(state, volume, ret):
             return
