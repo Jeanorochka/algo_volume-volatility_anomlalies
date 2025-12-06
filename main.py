@@ -406,6 +406,7 @@ def log_trade(
     net_pnl_pct: Optional[float],        # None для входа
     candle_time,
     dry_run: bool,
+    exit_reason: Optional[str] = None,   # НОВОЕ: причина выхода (TP_TOUCH / SL_TOUCH)
 ):
     """Записываем сделку в CSV. Один общий файл для всех тикеров."""
     ts_log = datetime.utcnow().isoformat()
@@ -427,6 +428,7 @@ def log_trade(
                 "commission_pct",
                 "net_pnl_pct",
                 "dry_run",
+                "exit_reason",
             ])
         writer.writerow([
             ts_log,
@@ -439,6 +441,7 @@ def log_trade(
             None if commission_pct is None else float(commission_pct),
             None if net_pnl_pct is None else float(net_pnl_pct),
             int(dry_run),
+            exit_reason or "",
         ])
 
 
@@ -569,6 +572,7 @@ def close_long(
     candle_time,
     risk_state: RiskState,
     sector: Optional[str],
+    exit_reason: str,  # НОВОЕ: причина выхода (TP_TOUCH / SL_TOUCH)
 ):
     if not state.in_position:
         return
@@ -591,11 +595,12 @@ def close_long(
 
     if DRY_RUN:
         logging.info(
-            "[DRY_RUN] SELL %s x%d, gross=%.2f%%, net=%.2f%%",
+            "[DRY_RUN] SELL %s x%d, gross=%.2f%%, net=%.2f%%, reason=%s",
             ticker,
             lots,
             gross_pnl_pct,
             net_pnl_pct,
+            exit_reason,
         )
         log_trade(
             ticker=ticker,
@@ -607,6 +612,7 @@ def close_long(
             net_pnl_pct=net_pnl_pct,
             candle_time=candle_time,
             dry_run=True,
+            exit_reason=exit_reason,
         )
         risk_state.daily_realized_pnl += ret_net
         risk_state.open_positions_total = max(0, risk_state.open_positions_total - 1)
@@ -631,12 +637,13 @@ def close_long(
             order_id=str(uuid4()),
         )
         logging.info(
-            "SELL отправлен: %s x%d, resp=%s, gross=%.2f%%, net=%.2f%%",
+            "SELL отправлен: %s x%d, resp=%s, gross=%.2f%%, net=%.2f%%, reason=%s",
             ticker,
             lots,
             resp,
             gross_pnl_pct,
             net_pnl_pct,
+            exit_reason,
         )
         log_trade(
             ticker=ticker,
@@ -648,6 +655,7 @@ def close_long(
             net_pnl_pct=net_pnl_pct,
             candle_time=candle_time,
             dry_run=False,
+            exit_reason=exit_reason,
         )
         risk_state.daily_realized_pnl += ret_net
         risk_state.open_positions_total = max(0, risk_state.open_positions_total - 1)
@@ -675,19 +683,36 @@ def should_open_long(state: InstrumentState, volume: int, ret: float) -> bool:
     return (z_vol >= vol_thr) and (z_ret >= ret_thr)
 
 
-def should_close_long(state: InstrumentState) -> bool:
+def should_close_long(
+    state: InstrumentState,
+    high_price: Decimal,
+    low_price: Decimal,
+) -> Tuple[bool, Optional[str]]:
+    """
+    Закрываем по касанию TP/SL на основе high/low текущей свечи.
+    Приоритет SL (чтобы не оптимизировать в плюс, когда за одну свечу задели и SL, и TP).
+    """
     if not state.in_position or state.entry_price == 0:
-        return False
-    last_price = state.last_price
+        return False, None
+
     entry = state.entry_price
-    ret = float((last_price / entry) - 1)
 
-    tp = state.take_profit_pct
-    sl = state.stop_loss_pct
+    # ретёрны в долях для high/low
+    ret_high = float((high_price / entry) - 1)
+    ret_low = float((low_price / entry) - 1)
 
-    # ВАЖНО: эта проверка теперь вызывается на КАЖДОМ обновлении свечи,
-    # а не только на закрытии бара. То есть TP/SL ~ "при касании".
-    return (ret >= tp) or (ret <= sl)
+    tp = state.take_profit_pct  # типа 0.0025
+    sl = state.stop_loss_pct    # типа -0.0015
+
+    # Сначала смотрим SL (консервативно)
+    if ret_low <= sl:
+        return True, "SL_TOUCH"
+
+    # Потом TP
+    if ret_high >= tp:
+        return True, "TP_TOUCH"
+
+    return False, None
 
 
 # ================== СИНК ПОЗИЦИЙ С БРОКЕРОМ ==================
@@ -777,6 +802,8 @@ def process_candle(
     risk_state: RiskState,
 ):
     close_price = quotation_to_decimal(candle.close)
+    high_price  = quotation_to_decimal(candle.high)
+    low_price   = quotation_to_decimal(candle.low)
     volume = candle.volume
 
     if state.last_price == 0:
@@ -796,10 +823,12 @@ def process_candle(
         )
 
     logging.info(
-        "[%s] %s close=%s vol=%s in_pos=%s",
+        "[%s] %s close=%s high=%s low=%s vol=%s in_pos=%s",
         ticker,
         candle.time,
         close_price,
+        high_price,
+        low_price,
         volume,
         state.in_position,
     )
@@ -832,9 +861,20 @@ def process_candle(
         # Всё ок: и сигнал, и спред
         open_long(client, account_id, figi, ticker, state, candle.time, risk_state, sector)
     else:
-        # Здесь теперь TP/SL проверяется на КАЖДОМ обновлении свечи
-        if should_close_long(state):
-            close_long(client, account_id, figi, ticker, state, candle.time, risk_state, sector)
+        # Здесь TP/SL проверяется на КАЖДОМ обновлении свечи по high/low (по касанию)
+        should_exit, exit_reason = should_close_long(state, high_price, low_price)
+        if should_exit and exit_reason:
+            close_long(
+                client,
+                account_id,
+                figi,
+                ticker,
+                state,
+                candle.time,
+                risk_state,
+                sector,
+                exit_reason=exit_reason,
+            )
 
 
 # ================== MAIN ==================
