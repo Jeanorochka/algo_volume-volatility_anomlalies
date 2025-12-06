@@ -3,2034 +3,2261 @@
     "ABIO": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ABRD": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "AFKS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.326221858218504,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "AFLT": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "AKRN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ALRS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "APRI": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.4680662870588805,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.263,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "APTK": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "AQUA": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ARSA": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.7672114472858558,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.58,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ASSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.7272230307657392,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.268,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ASTR": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "AVAN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.0389907578387234,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.933,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "BANEP": {
-      "enabled": true,
+      "enabled": false,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
-    },
-    "BANE": {
-      "enabled": true,
-      "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "BELU": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "BISVP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.0596595919105285,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.849,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "BLNG": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.9909325948179482,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.843,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "BRZL": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.6049381264654228,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.398,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "BSPBP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.332890616670999,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.075,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "BSPB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "CARM": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "CBOM": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "CHGZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.7803364817521414,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.471,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "CHKZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "CHMF": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "CHMK": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.553208197187089,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.426,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "CNRU": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "CNTLP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.2582666015345954,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.123,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "CNTL": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.2200844561125908,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.079,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "DATA": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "DELI": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "DIAS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "DIOD": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.8396929600637915,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.662,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "DOMRF": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "DVEC": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.0721981365728428,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.927,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "DZRDP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.7424053247027573,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.407,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "DZRD": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "EELT": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.1928467935073013,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.06,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ELFV": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 4.817567889474644,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.787,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ELMT": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 3.350194003654683,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.416,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ENPG": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ETLN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "EUTR": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "FEES": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 5.0,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.96,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "FESH": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "FIXR": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 5.0,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.518,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "FLOT": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "GAZAP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "GAZA": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "GAZP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "GCHE": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "GECO": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "GEMA": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.2203344722672025,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.118,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "GEMC": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "GLRX": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "GMKN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "GTRK": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "HEAD": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "HIMCP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.014032826142226,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.828,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "HNFG": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "HYDR": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 5.0,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.96,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "IGSTP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "IGST": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "IRAO": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 2.5065229712332777,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 1.372,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "IRKT": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "IVAT": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.8168512269784822,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "JNOSP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.6491950601284455,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.467,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "JNOS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.988508841037713,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KAZTP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.3312765327743012,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.192,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KAZT": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.0907341315906487,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.0,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KBSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.876555437291746,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KCHEP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KCHE": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KFBA": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KGKCP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.8568651639198395,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.58,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KGKC": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.8917570479891075,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KLSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.1619652763035597,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.012,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KLVZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.1032413329794781,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
-    },
-    "KMAZ": {
-      "enabled": true,
-      "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.918,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KMEZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.0640814060355126,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.842,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KOGK": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.751294908690183,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.454,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KRKNP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.32757170601786,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.222,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KRKN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KRKOP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KROTP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KROT": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.5241941885929169,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.386,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KRSBP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.9753333584472368,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.781,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KRSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.9492714095573942,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.748,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KUZB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.5614414143247324,
-      "ret_z_entry": 1.6677762733214907,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 2.088,
+      "ret_z_entry": 1.506,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KZOSP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.8453927920090332,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.739,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "KZOS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.7568479817528313,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.647,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "LEAS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "LENT": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "LIFE": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.8128408777757383,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.684,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "LKOH": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "LMBZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.6197907526016524,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.413,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "LNZLP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.1189776261987014,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.718,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "LNZL": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.29268320870729,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.719,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "LPSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.9897982366368807,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.72,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "LSNGP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "LSNG": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.0092775180862812,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.813,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "LSRG": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "LVHK": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.4739868120151978,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.128,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MAGEP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.327184241012261,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.086,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MAGE": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.9771925697492598,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.774,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MAGN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MBNK": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MDMG": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.005,
-      "stop_loss_pct": -0.0025
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MFGSP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MFGS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MGKL": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MGNT": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MGTSP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.1941087798098091,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.053,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MGTS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MISBP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MISB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MOEX": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MRKC": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 3.3542856268874433,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 2.312,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MRKK": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.8785335568676076,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.576,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MRKP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 5.0,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.689,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MRKS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.0872842036164039,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.939,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MRKU": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.8269865570569597,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 1.803,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MRKV": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 5.0,
-      "ret_z_entry": 0.7892158875689326,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.96,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MRKY": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 3.2993283529175454,
-      "ret_z_entry": 1.168176354796147,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.639,
+      "ret_z_entry": 0.943,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MRKZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 5.0,
-      "ret_z_entry": 0.8673954159890502,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.96,
+      "ret_z_entry": 0.664,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MRSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.346905895944516,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.062,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MSNG": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MSRS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MSTT": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.9879091209358843,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.816,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MTLRP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MTLR": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MTSS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "MVID": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "NAUK": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.332260068898493,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.061,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "NFAZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.7713914851889405,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.404,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "NKHP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.7586150178629286,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "NKNCP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "NKNC": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.7512067712481837,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.642,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "NKSH": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.288734361963023,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.144,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "NLMK": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "NMTP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
-    },
-    "NNSBP": {
-      "enabled": true,
-      "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "NNSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "NSVZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.3726240169890593,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.186,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "NVTK": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "OGKB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 5.0,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.96,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "OKEY": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.073059761316559,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.554,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "OMZZP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "OZON": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "OZPH": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "PAZA": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "PHOR": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "PIKK": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "PLZL": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "PMSBP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.9569862714258635,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.802,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "PMSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.7653402939219434,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "POSI": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "PRFN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.0328312857629467,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.886,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "PRMB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "PRMD": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RAGR": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RASP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RBCM": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.7986847593305906,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RDRB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.9960744099280943,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.877,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RENI": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RGSS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.5642407629991726,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 1.086,
+      "ret_z_entry": 1.333,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RKKE": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.1741524780206347,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.996,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RNFT": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ROLO": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ROSN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ROST": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RTGZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RTKMP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RTKM": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RTSBP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.6055299843264574,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.31,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RTSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RUAL": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RUSI": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.572969036589959,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.226,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "RZSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.464552565276705,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.311,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SAGOP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.2495324283592693,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.898,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SAGO": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.074783765757107,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.781,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SAREP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SARE": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SBERP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SBER": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SELG": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SFIN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SGZH": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 3.2666234773111844,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 2.031,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SIBN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SLEN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.062154221378644,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.847,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SMLT": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SNGSP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SNGS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SOFL": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SPBE": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.7507395449385827,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "STSBP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.667683950062329,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.457,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "STSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.3150489882861267,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.123,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SVAV": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SVCB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SVETP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.3177073354325028,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.817,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "SVET": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.4812430620405348,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.933,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TASBP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TASB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.7159238963722903,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.361,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TATNP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TATN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TGKA": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 5.0,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.96,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TGKBP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 5.0,
-      "ret_z_entry": 1.7764312841764356,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.96,
+      "ret_z_entry": 1.536,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TGKB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 5.0,
-      "ret_z_entry": 1.5205346067616687,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.96,
+      "ret_z_entry": 1.332,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TGKN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 5.0,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.96,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TNSE": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TORSP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TORS": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TRMK": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TRNFP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TTLK": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.9196464452975612,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.768,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "TUZA": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.7607952058156477,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.554,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "T": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "UGLD": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 5.0,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.96,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "UKUZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.833601329145875,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "UNAC": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 2.9369117778423144,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 2.464,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "UNKL": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.5860138109069122,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.374,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "UPRO": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 5.0,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 3.726,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "URKZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.4169340607502465,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.099,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "USBN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.9591146065104197,
-      "ret_z_entry": 1.7232072405693595,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 2.759,
+      "ret_z_entry": 1.562,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "UTAR": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.0044475803163033,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.837,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "UWGN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VEON-RX": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.759750159925562,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.355,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VGSBP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VGSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VJGZP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VJGZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VKCO": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VLHZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.132866497998724,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.863,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VRSBP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.712494796639417,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.405,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VRSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.3937103098177206,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.202,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VSEH": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VSMO": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VSYDP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VSYD": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "VTBR": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.3209829035215457,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "WTCMP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.7567162817380138,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.603,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "WTCM": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.8507516361701875,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 1.66,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "WUSH": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "X5": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "YAKG": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 1.0700488989843049,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.939,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "YDEX": {
-      "enabled": true,
+      "enabled": false,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.007,
-      "stop_loss_pct": -0.0035
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "YKENP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "YKEN": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "YRSBP": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "YRSB": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 3.0,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ZAYM": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 0.75,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 0.63,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ZILL": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.6291119072336775,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.383,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     },
     "ZVEZ": {
       "enabled": true,
       "lots_per_trade": 1,
-      "vol_z_entry": 1.25,
-      "ret_z_entry": 2.934164659237352,
-      "take_profit_pct": 0.012,
-      "stop_loss_pct": -0.005
+      "vol_z_entry": 0.99,
+      "ret_z_entry": 2.52,
+      "take_profit_pct": 0.0025,
+      "stop_loss_pct": -0.0015,
+      "max_spread_pct": 0.005
     }
   }
 }
