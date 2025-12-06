@@ -8,7 +8,8 @@ import pandas as pd
 
 # === НАСТРОЙКИ ===
 
-DATA_DIR = "history_5m"     # папка с историей по всем акциям
+# Папка с ИСТОРИЕЙ 1-МИНУТНЫХ свечей по всем акциям
+DATA_DIR = "history_1m"     # важно: совпадает с HISTORY_DIR у робота
 MAX_WORKERS = 8             # сколько тикеров качать параллельно
 MONTHS_BACK = 6             # сколько месяцев истории держим
 BOARD = "TQBR"              # основной режим акций
@@ -27,9 +28,8 @@ def dt_now_msk_date():
 
 
 def global_start_date():
-    """Дата с которой нужен максимум 6 месяцев истории."""
+    """Дата, с которой нужен максимум MONTHS_BACK месяцев истории."""
     today = dt_now_msk_date()
-    # грубо: 30 дней * MONTHS_BACK
     approx_days = 30 * MONTHS_BACK
     start = today - timedelta(days=approx_days)
     return start
@@ -74,34 +74,14 @@ def load_1m_from_moex(ticker: str, start_date: str) -> pd.DataFrame:
 
     df["begin"] = pd.to_datetime(df["begin"])
     df.set_index("begin", inplace=True)
-    # сортируем на всякий случай
     df.sort_index(inplace=True)
+    # дальше индекс = время свечи, его мы будем сохранять как "datetime"
     return df
 
 
-def resample_to_5m(df_1m: pd.DataFrame) -> pd.DataFrame:
-    """
-    1m -> 5m OHLCV.
-    """
-    if df_1m.empty:
-        return df_1m
-
-    df_5m = df_1m.resample("5T", label="left", closed="left").agg(
-        {
-            "open": "first",
-            "high": "max",
-            "low": "min",
-            "close": "last",
-            "volume": "sum",
-        }
-    )
-    # выбрасываем бары без сделок
-    df_5m.dropna(subset=["open", "high", "low", "close"], inplace=True)
-    return df_5m
-
-
 def history_path(ticker: str) -> str:
-    return os.path.join(DATA_DIR, f"{ticker}_5m.csv")
+    # формат имени файла: TICKER_1m.csv
+    return os.path.join(DATA_DIR, f"{ticker}_1m.csv")
 
 
 def load_existing_history(ticker: str) -> pd.DataFrame:
@@ -119,17 +99,22 @@ def load_existing_history(ticker: str) -> pd.DataFrame:
     return df
 
 
-def save_history(ticker: str, df_5m: pd.DataFrame):
+def save_history(ticker: str, df_1m: pd.DataFrame):
+    """
+    Сохраняем 1-минутки в CSV в формате:
+    колонка datetime + open/high/low/close/volume.
+    """
     path = history_path(ticker)
-    df_5m.to_csv(path, encoding="utf-8", index_label="datetime")
+    # индекс сохраняем как колонку "datetime" — так его потом читает робот
+    df_1m.to_csv(path, encoding="utf-8", index_label="datetime")
 
 
 def update_ticker_history(ticker: str) -> str:
     """
-    Обновляем историю 5m по одному тикеру:
+    Обновляем историю 1m по одному тикеру:
     - читаем старую историю, если есть
     - считаем, с какой даты докачивать 1m
-    - качаем, ресемплим, мерджим, режем 6 месяцев
+    - качаем, мерджим, режем до MONTHS_BACK месяцев
     """
     try:
         existing = load_existing_history(ticker)
@@ -145,26 +130,25 @@ def update_ticker_history(ticker: str) -> str:
 
         start_date_str = start_date.isoformat()
 
-        df_1m = load_1m_from_moex(ticker, start_date_str)
-        if df_1m.empty:
+        df_1m_new = load_1m_from_moex(ticker, start_date_str)
+        if df_1m_new.empty:
             return f"{ticker}: нет свежих данных с {start_date_str}"
 
-        df_new_5m = resample_to_5m(df_1m)
-
+        # комбинируем старую и новую историю 1m
         if existing.empty:
-            combined = df_new_5m
+            combined = df_1m_new
         else:
-            combined = pd.concat([existing, df_new_5m])
+            combined = pd.concat([existing, df_1m_new])
             combined = combined[~combined.index.duplicated(keep="last")]
             combined.sort_index(inplace=True)
 
-        # режем до 6 месяцев
+        # режем до нужного горизонта (MONTHS_BACK)
         cutoff = global_start_date()
         combined = combined[combined.index.date >= cutoff]
 
         save_history(ticker, combined)
 
-        return f"{ticker}: баров всего={len(combined)}, новых={len(df_new_5m)}"
+        return f"{ticker}: баров всего={len(combined)}, новых={len(df_1m_new)}"
 
     except Exception as e:
         return f"{ticker}: ОШИБКА {e}"
