@@ -25,28 +25,30 @@ from tinkoff.invest.exceptions import InvestError
 TOKEN_ENV_NAME = "INVEST_TOKEN"
 ACCOUNT_ID_ENV_NAME = "INVEST_ACCOUNT_ID"
 
-# Папка с 5-минутной историей по всем акциям (из update_history_all_5m.py)
-HISTORY_DIR = "history_5m"
+# Папка с минутной историей по всем акциям (из update_history_all_1m.py, например)
+HISTORY_DIR = "history_1m"
+HISTORY_FILE_SUFFIX = "_1m.csv"
 
 # Файл конфигурации с пер-тикерными настройками
 CONFIG_FILE = "config.json"
 
-# Ограничим число инструментов
+# Число инструментов
 MAX_INSTRUMENTS = 170
 
 # БАЗОВЫЕ параметры аномалий (z-score), от них пляшем по умолчанию
-BASE_VOL_Z_ENTRY = 2.5   # базовый порог по объёму
-BASE_RET_Z_ENTRY = 1.5   # базовый порог по ретёрну
+# Чуть снизил vol-порог, чтобы входить немного раньше по объёму
+BASE_VOL_Z_ENTRY = 2.2   # было 2.5
+BASE_RET_Z_ENTRY = 1.4   # было 1.5
 
 # Базовые параметры выхода (могут быть переопределены на уровне тикера)
-TAKE_PROFIT_PCT = 0.012   # +1.2% профит
-STOP_LOSS_PCT   = -0.005  # -0.5% убыток
+TAKE_PROFIT_PCT = 0.0025   # +0.25% профит
+STOP_LOSS_PCT   = -0.0015  # -0.15% убыток
 
 # Базовый объём сделки
 LOTS_PER_TRADE = 1
 
 # Безопасность: True = НЕ шлём ордера, только логируем
-DRY_RUN = False
+DRY_RUN = True
 
 # Минимальное число баров в истории, чтобы тикер считался валидным
 MIN_BARS_HISTORY = 200
@@ -54,7 +56,7 @@ MIN_BARS_HISTORY = 200
 # Комиссия брокера на одну сторону сделки, доля от объёма
 COMMISSION_PER_SIDE_PCT = 0.00004
 
-# Дневной лимит убытка (по сумме net-PnL с начала запуска), доля (−0.02 = −2%)
+# Дневной лимит убытка (по сумме net-PnL с начала запуска), доля (−0.5 = −50%)
 DAILY_LOSS_LIMIT_PCT = -0.5
 
 # Лимиты по числу позиций
@@ -63,6 +65,9 @@ MAX_OPEN_POSITIONS_PER_SECTOR = 3      # максимум позиций в од
 
 # Файл лога сделок (общий для всех тикеров)
 TRADES_LOG_FILE = "trades_log.csv"
+
+# Тикеры, которые НЕ хотим торговать вообще
+EXCLUDED_TICKERS = {"BANE", "YDEX", "BANEP"}
 
 
 # ================== СОСТОЯНИЕ ==================
@@ -163,8 +168,8 @@ def get_current_spread_pct(client: Client, figi: str) -> Optional[float]:
 # ================== ЗАГРУЗКА ИСТОРИИ ==================
 
 def load_history_for_ticker(ticker: str) -> Optional[pd.DataFrame]:
-    """Читаем history_5m/<TICKER>_5m.csv, если есть."""
-    path = os.path.join(HISTORY_DIR, f"{ticker}_5m.csv")
+    """Читаем HISTORY_DIR/<TICKER>_1m.csv, если есть."""
+    path = os.path.join(HISTORY_DIR, f"{ticker}{HISTORY_FILE_SUFFIX}")
     if not os.path.exists(path):
         return None
     df = pd.read_csv(path)
@@ -179,7 +184,7 @@ def load_history_for_ticker(ticker: str) -> Optional[pd.DataFrame]:
 
 def build_states_from_history() -> Dict[str, InstrumentState]:
     """
-    Проходим по всем файлам history_5m/*_5m.csv, считаем статистику
+    Проходим по всем файлам HISTORY_DIR/*_1m.csv, считаем статистику
     и возвращаем словарь: тикер -> InstrumentState.
     """
     states: Dict[str, InstrumentState] = {}
@@ -189,7 +194,7 @@ def build_states_from_history() -> Dict[str, InstrumentState]:
         return states
 
     for fname in os.listdir(HISTORY_DIR):
-        if not fname.endswith("_5m.csv"):
+        if not fname.endswith(HISTORY_FILE_SUFFIX):
             continue
 
         ticker = fname.split("_")[0]
@@ -680,6 +685,8 @@ def should_close_long(state: InstrumentState) -> bool:
     tp = state.take_profit_pct
     sl = state.stop_loss_pct
 
+    # ВАЖНО: эта проверка теперь вызывается на КАЖДОМ обновлении свечи,
+    # а не только на закрытии бара. То есть TP/SL ~ "при касании".
     return (ret >= tp) or (ret <= sl)
 
 
@@ -779,7 +786,7 @@ def process_candle(
 
     state.last_price = close_price
 
-    # Если поза уже была помечена как открытая, но entry_price ещё не знаем
+    # Если поза уже была помечена как открытая, но entry_price ещё не знаем (после синка)
     if state.in_position and state.entry_price == 0:
         state.entry_price = close_price
         logging.info(
@@ -825,6 +832,7 @@ def process_candle(
         # Всё ок: и сигнал, и спред
         open_long(client, account_id, figi, ticker, state, candle.time, risk_state, sector)
     else:
+        # Здесь теперь TP/SL проверяется на КАЖДОМ обновлении свечи
         if should_close_long(state):
             close_long(client, account_id, figi, ticker, state, candle.time, risk_state, sector)
 
@@ -848,7 +856,7 @@ def main():
     logging.info("Загружаем историю из %s ...", HISTORY_DIR)
     states_from_history = build_states_from_history()
     if not states_from_history:
-        logging.error("Нет валидных тикеров в истории. Сначала запусти update_history_all_5m.py")
+        logging.error("Нет валидных тикеров в истории. Сначала запусти сбор истории (1m).")
         return
 
     # ---- грузим / создаём config.json и накрываем им стейты ----
@@ -932,6 +940,11 @@ def main():
         subscribed_tickers = []
 
         for ticker in common_tickers:
+            # Жёстко вырезаем нежелательные тикеры
+            if ticker in EXCLUDED_TICKERS:
+                logging.info("Тикер %s в списке исключений, пропускаем", ticker)
+                continue
+
             st = states_from_history[ticker]
             if not st.enabled:
                 logging.info("Тикер %s отключен в конфиге (enabled=false), пропускаем", ticker)
@@ -949,7 +962,7 @@ def main():
             subscribed_tickers.append(ticker)
 
         if not instruments:
-            logging.error("Нет ни одного тикера для подписки (все отключены?).")
+            logging.error("Нет ни одного тикера для подписки (все отключены или исключены?).")
             return
 
         logging.info(
@@ -972,7 +985,8 @@ def main():
         )
 
         market_data_stream: MarketDataStreamManager = client.create_market_data_stream()
-        market_data_stream.candles.waiting_close().subscribe(instruments)
+        # ВАЖНО: без waiting_close(), чтобы работать внутри свечи
+        market_data_stream.candles.subscribe(instruments)
 
         try:
             for marketdata in market_data_stream:
